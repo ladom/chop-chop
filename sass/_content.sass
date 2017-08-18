@@ -1,0 +1,70 @@
+.content
+	min-height: 440px
+
+.content__container
+	height: 100%
+	display: flex
+	flex-direction: row
+
+.content__column
+	width: 33.33%
+	min-height: 100%
+	margin-left: 20px
+	display: flex
+	flex-direction: column
+	align-content: stretch
+	overflow-y: auto
+
+.content__column:last-child
+	margin-right: 20px
+
+.content__column--main
+	min-height: 410px
+
+.content__title
+	font-family: $bree
+	font-size: 38px
+	color: $content__title
+	padding: 35px 0
+	line-height: 1.4
+
+.content__image
+	float: left
+	margin: 0 20px 20px 2px
+	border: 2px solid #fff
+	display: inline-block
+	box-shadow: 0 0 0 2px $content__layer--border
+	filter: grayscale(100%)
+	vertical-align: text-top
+
+.content__text
+	font-family: $text
+	font-size: 14px
+	line-height: 22px
+	color: $content__text
+	text-align: justify
+
+.content__column--link
+	display: flex
+	flex-direction: column
+
+.content__text:first-of-type
+	position: relative
+	top: -4px
+
+.content__more
+	@extend .content__text
+	display: none
+	top: 0
+
+.content__link
+	font-family: $text
+	font-size: 14px
+	color: $content__more
+	margin: 20px 0
+	text-align: right
+
+	&:hover
+		color: $content__more--hover
+		cursor: pointer
+	

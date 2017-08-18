@@ -1,0 +1,43 @@
+header
+	width: 100vw
+	height: 180px
+	background-image: url(../pictures/logo.png)
+	background-position: center center
+	background-size: 120px 120px
+	background-repeat: no-repeat
+
+.header
+	height: 180px
+	max-width: 980px
+	display: flex
+	flex-direction: row
+	justify-content: center
+
+.header__column
+	width: 25%
+	height: 180px
+	margin-left: 20px
+	display: flex
+	align-items: center
+
+.header__column:last-child
+	margin-right: 20px
+
+.header__column--left
+	justify-content: flex-start
+
+.header__column--right
+	justify-content: flex-end
+
+.header__link
+	text-decoration: none
+	font-family: $text
+	font-size: 18px
+	color: $header__menu
+	height: 72px
+	padding-top: 27px
+
+.header__link:hover
+	color: $header__menu--hover
+	border-bottom: 1px solid $header__menu--hoverLine
+	cursor: pointer
