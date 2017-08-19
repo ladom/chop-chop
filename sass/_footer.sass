@@ -1,0 +1,119 @@
+footer
+	width: 100vw
+	min-height: 160px
+	background-color: $footer__bg
+	color: $footer__text
+
+footer a
+	color: $footer__text
+	text-decoration: none
+	font-family: $text
+
+	&:hover
+		cursor: pointer
+
+.footer__back
+	width: 100%
+	height: 40px
+	display: flex
+	justify-content: center
+
+.footer__backBtn
+	width: 33.33%
+	margin: 0 20px
+	background-color: $footer__bg
+	position: relative
+	top: -30px
+	left: 0
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
+	text-align: center
+	padding-top: 12px
+	font-size: 12px
+	box-shadow: 0 3px 0 $footer__backBtn--shadow inset
+
+	&:hover
+		cursor: pointer
+		top: -29px
+
+.footer__content
+	display: flex
+	flex-direction: row
+	width: 100%
+	min-height: 50px
+
+	@media (max-width: $tablet)
+		flex-direction: column
+
+.footer__column
+	width: 33.33%
+	margin-left: 20px
+	display: flex
+
+	@media (max-width: $tablet)
+		width: 100%
+		margin-left: 0
+		padding: 20px
+
+.footer__column:last-child
+	margin-right: 20px
+
+	@media (max-width: $tablet)
+		margin-right: 0
+
+.footer__left
+	flex-direction: row
+	align-items: flex-start
+
+.footer__links
+	display: flex
+	flex-direction: column
+	width: 50%
+	font-size: 16px
+
+.footer__link:first-child
+	margin-bottom: 20px
+
+.footer__link:hover
+	cursor: pointer
+
+.footer__left--left
+	text-align: left
+
+.footer__left--right
+	text-align: right
+
+.footer__center
+	justify-content: center
+	align-items: center
+
+.footer__social
+	height: 50px
+	width: 100%
+	display: flex
+	justify-content: center
+
+.footer__social--link
+	height: 50px
+	width: 50px
+	display: inline-block
+	text-align: center
+	line-height: 50px
+	color: $footer__bg
+	background-color: $footer__text
+	font-size: 25px
+	border-radius: 50%
+	margin: 0 20px
+
+	&:hover
+		cursor: pointer
+
+.footer__right--content
+	text-align: right
+	line-height: 50px
+	width: 100%
+	font-family: $text
+	font-size: 16px
+
+	@media (max-width: $phone)
+		font-size: 12px

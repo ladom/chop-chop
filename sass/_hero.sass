@@ -1,6 +1,12 @@
 .hero
 	width: 100vw
-	height: 350px
+	min-height: 350px
+
+	@media (max-width: $middle)
+		min-height: 300px
+
+	@media (max-width: $tablet)
+		min-height: 200px
 
 .hero__content
 	display: flex
@@ -12,6 +18,14 @@
 	font-size: 82px
 	text-align: center
 	padding: 70px 20px 65px 20px
+
+	@media (max-width: $middle)
+		font-size: 62px
+		padding: 50px 20px 45px 20px
+
+	@media (max-width: $tablet)
+		font-size: 42px
+		padding: 30px 10px 25px 10px
 
 .hero__button
 	background: linear-gradient($button__gradient--top, $button__gradient--bottom)
@@ -32,3 +46,24 @@
 		height: 70px
 		box-shadow: 1px 1px 5px $button__shadow--hover inset
 		cursor: pointer
+		margin-bottom: 65px
+
+	@media (max-width: $tablet)
+		width: 50%
+		height: 50px
+		font-size: 18px
+		margin-bottom: 40px
+
+		&:hover
+			height: 55px
+			margin-bottom: 35px
+
+	@media (max-width: $phone)
+		width: 70%
+		height: 40px
+		font-size: 16px
+		margin-bottom: 30px
+
+		&:hover
+			height: 45px
+			margin-bottom: 25px

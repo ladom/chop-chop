@@ -1,3 +1,7 @@
+.contact
+	width: 100vw
+	min-height: 435px
+
 .contact__title
 	font-family: $bree
 	font-size: 60px
@@ -9,11 +13,75 @@
 	display: flex
 	justify-content: center
 	align-items: center
+	max-width: 980px
 
 .form__submit--button
 	@extend .hero__button
 	height: 47px
 	width: 50%
+	margin: 30px 0 80px 0
 
 	&:hover
 		height: 52px
+		margin-bottom: 75px
+
+.form__input
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	width: 100%
+	min-height: 170px
+
+	@media (max-width: $tablet)
+		flex-direction: column
+
+.form__left
+	display: flex
+	flex-direction: column
+	margin: 0 10px 0 20px
+
+	@media (max-width: $tablet)
+		margin: 0
+
+.form__left--input
+	min-height: 50px
+	width: 100%
+	margin-bottom: 10px
+	border-radius: 5px
+	background-color: $contact__input--bg
+	border: 1px solid $contact__input--border
+	box-shadow: 2px 2px 5px $contact__input--shadow inset
+	color: $contact__input--text
+	font-size: 18px
+	font-family: $text
+	outline: none
+	padding-left: 20px
+
+.form__left--input:last-child
+	margin-bottom: 0
+
+.form__left input::placeholder
+	color: $contact__input--placeholder
+
+.form__right
+	margin: 0 20px 0 10px
+
+	@media (max-width: $tablet)
+		margin: 0
+
+.form__column
+	width: 50%
+
+	@media (max-width: $tablet)
+		width: 100%
+		padding: 20px
+
+.form__right textarea
+	@extend .form__left--input
+	min-height: 170px
+	width: 100%
+	padding-top: 10px
+
+.form__right textarea::placeholder
+	color: $contact__input--placeholder
+	

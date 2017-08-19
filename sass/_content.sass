@@ -6,6 +6,9 @@
 	display: flex
 	flex-direction: row
 
+	@media (max-width: $tablet)
+		flex-direction: column
+
 .content__column
 	width: 33.33%
 	min-height: 100%
@@ -15,11 +18,22 @@
 	align-content: stretch
 	overflow-y: auto
 
+	@media (max-width: $tablet)
+		width: 100%
+		margin-left: 0
+		padding: 0 20px
+
 .content__column:last-child
 	margin-right: 20px
 
+	@media (max-width: $tablet)
+		margin-right: 0
+
 .content__column--main
 	min-height: 410px
+
+	@media (max-width: $tablet)
+		min-height: 150px
 
 .content__title
 	font-family: $bree
@@ -27,6 +41,12 @@
 	color: $content__title
 	padding: 35px 0
 	line-height: 1.4
+
+	@media (max-width: $phone)
+		font-size: 28px
+		padding: 20px 0
+		line-height: 1.2
+		text-align: center
 
 .content__image
 	float: left
