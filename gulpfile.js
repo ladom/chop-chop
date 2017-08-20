@@ -13,7 +13,7 @@ gulp.task('serve', ['sass', 'js'], function() {
 
     gulp.watch("sass/*.sass", ['sass']);
     gulp.watch("scripts/*.js", ['js']);
-    gulp.watch("index.html").on('change', browserSync.reload);
+    gulp.watch("index.php").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task("js", function() {
-    return gulp.src(['scripts/js1.js'])
+    return gulp.src(['scripts/js1.js', 'scripts/js2.js', 'scripts/js3.js', 'scripts/form.js'])
 
     .pipe(concat('script.js'))
         .pipe(babel({
